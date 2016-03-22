@@ -1,6 +1,9 @@
 # curalate-dynamic-dynamodb
 Curalate-specific configurations and scripts for Dynamic DynamoDB
 
+##GitHub Repo
+https://github.com/sebdah/dynamic-dynamodb
+
 ##Deployment
 Deploy by launching CloudFormation stack:
 <ol>
@@ -20,3 +23,6 @@ When the instance launches, it will pull the conf file automatically and start t
 <li>The configurations are in `/etc/dynamic-dynamodb/dynamic-dynamodb.conf`</li>
 <li>Check the status of the daemon: service dynamic-dynamodb status</li>
 <li>Start the service: service dynamic-dynamodb start</li>
+
+##Documentation
+http://dynamic-dynamodb.readthedocs.org/en/latest/
