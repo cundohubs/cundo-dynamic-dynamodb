@@ -1,0 +1,751 @@
+{
+    "com.curalate.history.item_history": {
+        "reads": {
+            "throttle": 5,
+            "provisioned": {
+                "min": 10,
+                "max": 25
+            }
+        },
+        "writes": {
+            "throttle": 5,
+            "provisioned": {
+                "min": 5,
+                "max": 25
+            }
+        }
+    },
+    "com.curalate.idx_tweets_by_pin": {
+        "reads": {
+            "throttle": 5,
+            "provisioned": {
+                "min": 100,
+                "max": 250
+            }
+        },
+        "writes": {
+            "throttle": 5,
+            "provisioned": {
+                "min": 10,
+                "max": 40
+            }
+        }
+    },
+    "com.curalate.users": {
+        "reads": {
+            "throttle": 1,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 10,
+                "max": 300
+            }
+        },
+        "writes": {
+            "throttle": 1,
+            "provisioned": {
+                "min": 10,
+                "max": 200
+            }
+        }
+    },
+    "com.curalate.idx_pins_by_domain": {
+        "reads": {
+            "throttle": 5,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 50,
+                "max": 500
+            }
+        },
+        "writes": {
+            "throttle": 50,
+            "provisioned": {
+                "min": 200,
+                "max": 600
+            }
+        }
+    },
+    "com.curalate.imageprocessing.idx_file_id_by_url": {
+        "reads": {
+            "throttle": 5,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 600,
+                "max": 1200
+            }
+        },
+        "writes": {
+            "throttle": 50,
+            "provisioned": {
+                "min": 200,
+                "max": 600
+            }
+        }
+    },
+    "com.curalate.imageprocessing.locks": {
+        "reads": {
+            "throttle": 5,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 100,
+                "max": 1200
+            }
+        },
+        "writes": {
+            "throttle": 50,
+            "provisioned": {
+                "min": 250,
+                "max": 1200
+            }
+        }
+    },
+    "com.curalate.instagram.comments": {
+        "reads": {
+            "throttle": 10,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 2662,
+                "max": 9000
+            }
+        },
+        "writes": {
+            "throttle": 5,
+            "provisioned": {
+                "min": 1300,
+                "max": 2000
+            }
+        }
+    },
+    "com.curalate.deduplication.idx_deduplication_features_by_file_id": {
+        "reads": {
+            "throttle": 100,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 1000,
+                "max": 2000
+            }
+        },
+        "writes": {
+            "throttle": 5,
+            "provisioned": {
+                "min": 100,
+                "max": 200
+            }
+        }
+    },
+    "com.curalate.idx_user_lookup": {
+        "reads": {
+            "throttle": 100,
+            "numchecks": 12,
+            "provisioned": {
+                "min": 500,
+                "max": 2500
+            }
+        },
+        "writes": {
+            "throttle": 5,
+            "provisioned": {
+                "min": 10,
+                "max": 30
+            }
+        }
+    },
+    "com.curalate.idx_pins_by_board": {
+        "reads": {
+            "throttle": 200,
+            "numchecks": 12,
+            "provisioned": {
+                "min": 200,
+                "max": 6000
+            }
+        },
+        "writes": {
+            "throttle": 5,
+            "provisioned": {
+                "min": 200,
+                "max": 800
+            }
+        }
+    },
+    "com.curalate.idx_board_lookup": {
+        "reads": {
+            "throttle": 200,
+            "numchecks": 12,
+            "provisioned": {
+                "min": 500,
+                "max": 2500
+            }
+        },
+        "writes": {
+            "throttle": 1,
+            "provisioned": {
+                "min": 50,
+                "max": 300
+            }
+        }
+    },
+    "com.curalate.images": {
+        "reads": {
+            "throttle": 100,
+            "numchecks": 12,
+            "provisioned": {
+                "min": 500,
+                "max": 5000
+            }
+        },
+        "writes": {
+            "throttle": 5,
+            "provisioned": {
+                "min": 100,
+                "max": 300
+            }
+        }
+    },
+    "com.curalate.boards": {
+        "reads": {
+            "throttle": 1000,
+            "numchecks": 18,
+            "provisioned": {
+                "min": 500,
+                "max": 12000
+            }
+        },
+        "writes": {
+            "throttle": 5,
+            "provisioned": {
+                "min": 50,
+                "max": 150
+            }
+        }
+    },
+    "com.curalate.pin.insights": {
+        "reads": {
+            "throttle": 100,
+            "numchecks": 24,
+            "provisioned": {
+                "min": 500,
+                "max": 10000
+            }
+        },
+        "writes": {
+            "throttle": 5,
+            "provisioned": {
+                "min": 50,
+                "max": 500
+            }
+        }
+    },
+    "com.curalate.idx_pins_by_tracking_code": {
+        "reads": {
+            "throttle": 10,
+            "numchecks": 12,
+            "provisioned": {
+                "min": 1800,
+                "max": 3000
+            }
+        },
+        "writes": {
+            "throttle": 5,
+            "provisioned": {
+                "min": 15,
+                "max": 30
+            }
+        }
+    },
+    "com.curalate.campaigns.campaign_impressions": {
+        "reads": {
+            "throttle": 2,
+            "numchecks": 12,
+            "provisioned": {
+                "min": 50,
+                "max": 400
+            }
+        },
+        "writes": {
+            "throttle": 2,
+            "provisioned": {
+                "min": 5,
+                "max": 200
+            }
+        }
+    },
+    "com.curalate.campaigns.campaign_pins": {
+        "reads": {
+            "throttle": 2,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 50,
+                "max": 400
+            }
+        },
+        "writes": {
+            "throttle": 2,
+            "provisioned": {
+                "min": 5,
+                "max": 20
+            }
+        }
+    },
+    "com.curalate.deduplication.blacklisted_fingerprints": {
+        "reads": {
+            "throttle": 2,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 10,
+                "max": 200
+            }
+        },
+        "writes": {
+            "throttle": 2,
+            "provisioned": {
+                "min": 5,
+                "max": 20
+            }
+        }
+    },
+    "com.curalate.deduplication.idx_canonical_id_by_file_id": {
+        "reads": {
+            "throttle": 200,
+            "provisioned": {
+                "min": 5000,
+                "max": 25000
+            }
+        },
+        "writes": {
+            "throttle": 20,
+            "provisioned": {
+                "min": 350,
+                "max": 400
+            }
+        }
+    },
+    "com.curalate.deduplication.idx_file_id_by_canonical_id": {
+        "reads": {
+            "throttle": 2000,
+            "provisioned": {
+                "min": 2000,
+                "max": 13000
+            }
+        },
+        "writes": {
+            "throttle": 20,
+            "provisioned": {
+                "min": 150,
+                "max": 300
+            }
+        }
+    },
+    "com.curalate.deduplication.idx_file_id_by_fingerprint": {
+        "reads": {
+            "throttle": 5,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 100,
+                "max": 800
+            }
+        },
+        "writes": {
+            "throttle": 5,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 200,
+                "max": 500
+            }
+        }
+    },
+    "com.curalate.deduplication.idx_fingerprint_by_hash": {
+        "reads": {
+            "throttle": 50,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 10600,
+                "max": 18000
+            }
+        },
+        "writes": {
+            "throttle": 5,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 500,
+                "max": 1000
+            }
+        }
+    },
+    "com.curalate.deduplication.representative_file_ids": {
+        "reads": {
+            "throttle": 50,
+            "provisioned": {
+                "min": 1000,
+                "max": 20000
+            }
+        },
+        "writes": {
+            "throttle": 5,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 100,
+                "max": 300
+            }
+        }
+    },
+    "com.curalate.facebook_access_tokens": {
+        "reads": {
+            "throttle": 50,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 50,
+                "max": 250
+            }
+        },
+        "writes": {
+            "throttle": 1,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 1,
+                "max": 20
+            }
+        }
+    },
+    "com.curalate.facebook_rate_limit": {
+        "reads": {
+            "throttle": 50,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 10,
+                "max": 60
+            }
+        },
+        "writes": {
+            "throttle": 1,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 1,
+                "max": 20
+            }
+        }
+    },
+    "com.curalate.idx_boards_by_user": {
+        "reads": {
+            "throttle": 1,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 20,
+                "max": 320
+            }
+        },
+        "writes": {
+            "throttle": 1,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 10,
+                "max": 100
+            }
+        }
+    },
+    "com.curalate.idx_pins_by_asin": {
+        "reads": {
+            "throttle": 1,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 1,
+                "max": 5
+            }
+        },
+        "writes": {
+            "throttle": 1,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 5,
+                "max": 10
+            }
+        }
+    },
+    "com.curalate.idx_pins_by_image": {
+        "reads": {
+            "throttle": 100,
+            "numchecks": 18,
+            "provisioned": {
+                "min": 500,
+                "max": 12000
+            }
+        },
+        "writes": {
+            "throttle": 10,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 200,
+                "max": 800
+            }
+        }
+    },
+    "com.curalate.imageprocessing.file_meta_data": {
+        "reads": {
+            "throttle": 100,
+            "numchecks": 18,
+            "provisioned": {
+                "min": 1000,
+                "max": 20000
+            }
+        },
+        "writes": {
+            "throttle": 10,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 400,
+                "max": 1200
+            }
+        }
+    },
+    "com.curalate.imageprocessing.idx_url_by_file_id": {
+        "reads": {
+            "throttle": 10,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 50,
+                "max": 300
+            }
+        },
+        "writes": {
+            "throttle": 10,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 200,
+                "max": 700
+            }
+        }
+    },
+    "com.curalate.imageprocessing.knobs": {
+        "reads": {
+            "throttle": 10,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 10,
+                "max": 30
+            }
+        },
+        "writes": {
+            "throttle": 10,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 1,
+                "max": 20
+            }
+        }
+    },
+    "com.curalate.imageprocessing.tags": {
+        "reads": {
+            "throttle": 5,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 20,
+                "max": 100
+            }
+        },
+        "writes": {
+            "throttle": 5,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 10,
+                "max": 50
+            }
+        }
+    },
+    "com.curalate.imageprocessing.undigestable_images": {
+        "reads": {
+            "throttle": 1,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 5,
+                "max": 50
+            }
+        },
+        "writes": {
+            "throttle": 1,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 2,
+                "max": 10
+            }
+        }
+    },
+    "com.curalate.instagram.media": {
+        "reads": {
+            "throttle": 100,
+            "numchecks": 18,
+            "provisioned": {
+                "min": 15000,
+                "max": 90000
+            }
+        },
+        "writes": {
+            "throttle": 15,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 1500,
+                "max": 3000
+            }
+        }
+    },
+    "com.curalate.instagram.users": {
+        "reads": {
+            "throttle": 10,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 8000,
+                "max": 24000
+            }
+        },
+        "writes": {
+            "throttle": 500,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 2750,
+                "max": 7000
+            }
+        }
+    },
+    "com.curalate.locks": {
+        "reads": {
+            "throttle": 5,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 50,
+                "max": 500
+            }
+        },
+        "writes": {
+            "throttle": 10,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 500,
+                "max": 1500
+            }
+        }
+    },
+    "com.curalate.microsite.emoji.idx_user_id_by_network_id": {
+        "reads": {
+            "throttle": 5,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 5,
+                "max": 50
+            }
+        },
+        "writes": {
+            "throttle": 1,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 2,
+                "max": 10
+            }
+        }
+    },
+    "com.curalate.microsite.emoji.users": {
+        "reads": {
+            "throttle": 5,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 5,
+                "max": 50
+            }
+        },
+        "writes": {
+            "throttle": 1,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 2,
+                "max": 10
+            }
+        }
+    },
+    "com.curalate.pins": {
+        "reads": {
+            "throttle": 10,
+            "numchecks": 24,
+            "provisioned": {
+                "min": 10000,
+                "max": 91000
+            }
+        },
+        "writes": {
+            "throttle": 10,
+            "numchecks": 24,
+            "provisioned": {
+                "min": 1000,
+                "max": 4000
+            }
+        }
+    },
+    "com.curalate.reliable_counters_simple": {
+        "reads": {
+            "throttle": 1,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 2,
+                "max": 10
+            }
+        },
+        "writes": {
+            "throttle": 1,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 50,
+                "max": 1000
+            }
+        }
+    },
+    "com.curalate.source_counts": {
+        "reads": {
+            "throttle": 1000,
+            "numchecks": 18,
+            "provisioned": {
+                "min": 5000,
+                "max": 20000
+            }
+        },
+        "writes": {
+            "throttle": 1,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 100,
+                "max": 800
+            }
+        }
+    },
+    "com.curalate.user_settings": {
+        "reads": {
+            "throttle": 1,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 20,
+                "max": 200
+            }
+        },
+        "writes": {
+            "throttle": 1,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 2,
+                "max": 10
+            }
+        }
+    },
+    "com.curalate.utils.event_tracking": {
+        "reads": {
+            "throttle": 1,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 300,
+                "max": 800
+            }
+        },
+        "writes": {
+            "throttle": 1,
+            "numchecks": 6,
+            "provisioned": {
+                "min": 150,
+                "max": 500
+            }
+        }
+    }
+}
