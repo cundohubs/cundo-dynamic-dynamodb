@@ -20,7 +20,7 @@ When the instance launches, it will pull the conf file automatically and start t
 
 ##Troubleshooting steps:
 <ol>
-<li>ssh -i storably-prod.pem ec2-user@172.31.105.147</li>
+<li>ssh -i <key> ec2-user@<hostname></li>
 <li>The configurations are in `/etc/dynamic-dynamodb/dynamic-dynamodb.conf`</li>
 <li>Check the status of the daemon: service dynamic-dynamodb status</li>
 <li>Start the service: service dynamic-dynamodb start</li>
