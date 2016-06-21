@@ -10,7 +10,7 @@ http://dynamic-dynamodb.readthedocs.org/en/latest/
 ##Deployment
 Deploy by launching CloudFormation stack:
 <ol>
-<li>Login to https://storably.signin.aws.amazon.com/console</li>
+<li>Login to https://<account_id>.signin.aws.amazon.com/console</li>
 <li>Go to CloudFormation dashboard: https://console.aws.amazon.com/cloudformation/home?region=us-east-1</li>
 <li>Click <Create Stack> button</li>
 <li>Create stack using the dynamic-dynamodb.template file with the default parameters. This will launch an EC2 instance into the PROD VPC and use the dynamic-dynamodb.conf file from the S3 bucket: S3://<bucket>/dynamic-dynamodb/</li>
